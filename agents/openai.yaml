@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenFX Plugin"
+  short_description: "Build and audit OpenFX image-effect plugins against the official contract."
+  default_prompt: "Use this skill to design, implement, debug, or review an OpenFX image-effect plugin; combine the skill guidance with current project evidence, check official OpenFX docs or headers before normative claims, and verify host-specific behavior separately."

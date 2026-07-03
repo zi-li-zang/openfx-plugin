@@ -24,6 +24,8 @@ Decision order:
 
 If official sources and this skill disagree, follow the official source and update or qualify the skill. If project evidence and this skill disagree, inspect the project state and treat the skill as stale guidance until updated. If the official source is unavailable during the turn, say that the answer is based on local/offline references and should be verified against the official documentation before treating it as normative.
 
+Use `references/official-docs-index.md` to choose between current online OpenFX documentation, official SDK headers/examples, the local PDF snapshot, and the topic summaries in `references/*.md`.
+
 Use these labels when explaining or changing code:
 
 - `OpenFX requirement`: directly required by official OpenFX docs, headers, or examples.
@@ -37,6 +39,7 @@ Do not reject a working implementation solely because it differs from a recommen
 
 Read only the references needed for the task:
 
+- For official source selection, online links, the local offline PDF snapshot, and topic-to-source routing, read `references/official-docs-index.md`.
 - For plugin contract, exported symbols, suites, objects, contexts, temporal coordinates, or official source links, read `references/official-contract.md`.
 - For `describe`, `describeInContext`, `createInstance`, `render`, `isIdentity`, RoD/RoI, `getFramesNeeded`, clip preferences, changed actions, purge caches, and status codes, read `references/lifecycle-actions.md`.
 - For user parameters, animated values, choice compatibility, pages/groups, push buttons, private persisted state, and parameter UI layout, read `references/parameters-ui.md`.
@@ -115,22 +118,6 @@ For production or commercial work, do not stop at a successful local preview. Va
 - Unsupported formats fail safely instead of being read incorrectly.
 - Third-party license notices are present for redistributed code, support libraries, model files, icons, and runtime binaries.
 
-## Official Links
+## Official Sources
 
-For normative OpenFX questions, use official sources before relying on memory or on this skill. For simple stable workflow steps, the skill can be followed directly, but project evidence and official sources still override it. When internet access is available, prefer the current online OpenFX docs; when offline, use the official headers and examples in the local OpenFX SDK checkout and state that the source is local/offline:
-
-- OpenFX docs home: https://openfx.readthedocs.io/en/main/
-- Generic Core API: https://openfx.readthedocs.io/en/main/Reference/ofxCoreAPI.html
-- Image Effect API: https://openfx.readthedocs.io/en/main/Reference/ofxImageEffectAPI.html
-- Image Effect Contexts: https://openfx.readthedocs.io/en/main/Reference/ofxImageEffectContexts.html
-- Image Effect Actions: https://openfx.readthedocs.io/en/main/Reference/ofxImageEffectActions.html
-- Coordinate Systems: https://openfx.readthedocs.io/en/main/Reference/ofxCoordSystem.html
-- Images and Clips: https://openfx.readthedocs.io/en/main/Reference/ofxImageClip.html
-- Effect Parameters: https://openfx.readthedocs.io/en/main/Reference/ofxParameter.html
-- Rendering: https://openfx.readthedocs.io/en/main/Reference/ofxRendering.html
-- Interacts: https://openfx.readthedocs.io/en/main/Reference/ofxInteracts.html
-- Clip Preferences: https://openfx.readthedocs.io/en/main/Reference/ofxClipPreferences.html
-- Suites Reference: https://openfx.readthedocs.io/en/main/Reference/suites/ofxSuiteReference.html
-- Packaging: https://openfx.readthedocs.io/en/main/Reference/ofxPackaging.html
-- Status Codes: https://openfx.readthedocs.io/en/main/Reference/ofxStatusCodes.html
-- ASWF OpenFX repository: https://github.com/AcademySoftwareFoundation/openfx
+For normative OpenFX questions, use official sources before relying on memory or on this skill. For simple stable workflow steps, the skill can be followed directly, but project evidence and official sources still override it. Read `references/official-docs-index.md` for the official page list, local PDF snapshot metadata, and topic-to-source routing.
